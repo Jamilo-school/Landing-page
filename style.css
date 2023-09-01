@@ -150,7 +150,7 @@ a{
 
 #levels{
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
+  border: 6px solid #fafafa;
   background: linear-gradient(45deg,#8c9393,#3d098d,#d11d56,#181ecd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1165,7 +1165,7 @@ textarea.input {
     width: 105px;
   }
   .nametags{
-    font-size: 20px;
+    font-size: 15px;
   }
  
     
