@@ -159,14 +159,14 @@ a{
   border-radius: 20px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
   border: 6px solid #fafafa;
-  padding-top: 8px;
+ 
   padding-bottom: 8px;
   background: linear-gradient(45deg,#8c9393,#3d098d,#d11d56,#181ecd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  margin: 1px;
-  padding: 12px;
+  margin: 3px;
+  padding: 8px;
  
  
   
@@ -306,13 +306,7 @@ width:120px;
   height: 60px;
   left: 500px;
 }
-#bottom{
-  background-color: #2db499;
-  position: absolute;
-  left: 420px;
-  top: 640px;
-  height: 30px;
-}
+
 
 .form-one{
   top: 23px;
@@ -1310,7 +1304,7 @@ textarea.input {
   
     scale: 0.8;
     background-color: #ffffff;
-    height: 700px;
+    height: auto;
     width: auto;
     border: 2px solid #fafafa;
  
