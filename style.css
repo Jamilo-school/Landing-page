@@ -1281,8 +1281,8 @@ textarea.input {
   scale: 0.8;
   background-color: #ffffff;
   overflow: auto;
-height: 400px;
-  width: 600px;
+height: 700px;
+  width: 300px;
   box-sizing: content-box;
   padding: 44px;
   transition-timing-function: ease-in;
@@ -1291,10 +1291,7 @@ height: 400px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
  
 
-  
-
 }
-
 .logoinmicrosoft{
   border-radius: 6px;
   width: 10%;
