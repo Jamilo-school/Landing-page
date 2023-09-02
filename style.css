@@ -149,11 +149,9 @@ a{
 }
 
 #levels{
+  border-radius: 20px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
   border: 6px solid #fafafa;
-  background: linear-gradient(45deg,#8c9393,#3d098d,#d11d56,#181ecd);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   padding-top: 8px;
   padding-bottom: 8px;
  
@@ -167,9 +165,9 @@ a{
   padding: 5px;
   border-radius: 5px;
  
+  
 }
-
-#mrks{
+  #mrks{
   border: solid #fafafa;
   background-color:transparent;
   color: red;
