@@ -56,6 +56,10 @@ main{
   right: 100px;
   
 }
+.repondscreen{
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+}
 
 .submenu{
   display: inline-block;
@@ -79,6 +83,8 @@ p#nav.text:hover{
 
 
 }
+
+
 .showSignUp.btn:hover{
   box-shadow: 3px 3px 3px red;
   backdrop-filter: blur(10px);
@@ -154,6 +160,11 @@ a{
   border: 6px solid #fafafa;
   padding-top: 8px;
   padding-bottom: 8px;
+  background: linear-gradient(45deg,#8c9393,#3d098d,#d11d56,#181ecd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  
  
  
 }
@@ -1036,6 +1047,13 @@ textarea.input {
     
     
   }
+  
+     
+  
+  .repondscreen{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   }
   li.submenu{
   margin-right: 5px;
   margin-left: 5px;
@@ -1117,6 +1135,7 @@ textarea.input {
   .subsection.one,.right.section {
     display: grid;
     grid-template-columns: repeat(2,1fr);
+  
     
   }
   .success-button-container {
@@ -1239,6 +1258,7 @@ textarea.input {
   .btn {
     padding: 0.45rem 1.2rem;
   }
+  
 }
 
 
@@ -1260,8 +1280,6 @@ textarea.input {
   left: 0;
   width: 100%;
   height: 100%;
-
-
   justify-content: center;
   align-items: center;
   z-index: 1000;
@@ -1274,17 +1292,21 @@ textarea.input {
 /* Microsoft log in page made by: csozi | Website: english.csozi.hu*/
 
 .form2 {
-/*Scale only to make it look right on the preview*/
-  scale: 0.8;
-  background-color: #ffffff;
-  height: 290px;
-  width: 300px;
+  /*Scale only to make it look right on the preview*/
+  
+    scale: 0.8;
+    background-color: #ffffff;
+    height: 490px;
+    width: auto;
+    border: 8px solid #fafafa;
+ 
   box-sizing: content-box;
-  padding: 44px;
+  padding: 25px;
   transition-timing-function: ease-in;
   color: #225c51;
   border-radius: 20px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  overflow: auto;
  
 
 }
@@ -1403,6 +1425,17 @@ width: 30%;
 .form2 .button_row .primary_button:hover {
   background-color: #005da6;
 
+}
+.popupclose{
+  background-color: #005da6;
+  border: 6px solid #fafafafa;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  
 }
 
 
