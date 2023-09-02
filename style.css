@@ -154,8 +154,9 @@ a{
   background: linear-gradient(45deg,#8c9393,#3d098d,#d11d56,#181ecd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  
  
  
 }
@@ -1121,7 +1122,7 @@ textarea.input {
     grid-template-columns: repeat(2,1fr);
     
   }
-  .success-button-container {
+  .success-button-container,.designspopup {
      grid-template-columns: repeat(2,1fr);
      width: 100%;
 
@@ -1279,8 +1280,8 @@ textarea.input {
 /*Scale only to make it look right on the preview*/
   scale: 0.8;
   background-color: #ffffff;
-  height: 290px;
-  width: 300px;
+
+  width: auto;
   box-sizing: content-box;
   padding: 44px;
   transition-timing-function: ease-in;
@@ -1406,6 +1407,16 @@ width: 30%;
   background-color: #005da6;
 
 }
+
+.rightsection{
+  grid-template-columns: repeat(2,1fr);
+
+height: auto;
+
+
+}
+
+
 
 
 
