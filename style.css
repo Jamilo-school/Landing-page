@@ -1310,7 +1310,7 @@ textarea.input {
   
     scale: 0.8;
     background-color: #ffffff;
-    height: 600px;
+    height: 700px;
     width: auto;
     border: 2px solid #fafafa;
  
@@ -1341,7 +1341,6 @@ textarea.input {
 
 .form2 .titlemic {
   font-weight: bold;
-  font-weight: 700;
   font-size: 1.9rem;
   background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);
   -webkit-background-clip: text;
