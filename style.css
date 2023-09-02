@@ -1280,16 +1280,16 @@ textarea.input {
 /*Scale only to make it look right on the preview*/
   scale: 0.8;
   background-color: #ffffff;
-  overflow: auto;
-height: 300px;
-  width: 290px;
+position: fixed;
+  width: auto;
   box-sizing: content-box;
   padding: 44px;
   transition-timing-function: ease-in;
   color: #225c51;
   border-radius: 20px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
- 
+ top: 1px;
+ left: 0px;
 
 }
 .logoinmicrosoft{
@@ -1411,7 +1411,7 @@ width: 30%;
 
 .rightsection{
   grid-template-columns: repeat(2,1fr);
-overflow-y: scroll;
+
 height: auto;
 
 
