@@ -1275,7 +1275,7 @@ textarea.input {
 
 .form2 {
 /*Scale only to make it look right on the preview*/
-  scale: 0.8;
+  scale: 0.9;
   background-color: #ffffff;
   overflow: auto;
   width: auto;
