@@ -1188,7 +1188,7 @@ width: 30%;
   }
   #end{
     display: flex;
-    border: 20px solid #fafafa;
+    border: 20px solid #939090;
     border-radius: 20px;
     position: absolute;
     bottom: -20px;
@@ -1350,7 +1350,7 @@ width: 30%;
   }
   #end{
     display: flex;
-    border: 20px solid #fafafa;
+    border: 20px solid #d8d5d0;
     border-radius: 20px;
     position: absolute;
     bottom: -20px;
