@@ -578,12 +578,25 @@ textarea.input {
 
 .social-media {
   padding: 2rem 0 0 0;
-  margin: 1.5rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 .social-media p {
   color: #333;
+ 
 }
+#end{
+  display: none;
+  border: 20px solid #fafafa;
+  border-radius: 20px;
+  position: absolute;
+  bottom: -20px;
+  width: 200%;
+  z-index: 1000;
+ 
+}
+
 
 .social-icons {
   display: flex;
@@ -1162,6 +1175,8 @@ width: 30%;
     height: 72px;
     opacity: 0;
   }
+
+  
 }
 /* /////////////loder 2 miamia Ends///////////////////// */
 
@@ -1170,6 +1185,16 @@ width: 30%;
   .nav-menu{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+  }
+  #end{
+    display: flex;
+    border: 20px solid #fafafa;
+    border-radius: 20px;
+    position: absolute;
+    bottom: -20px;
+    width: 90%;
+    z-index: 1000;
+   
   }
  
   
@@ -1322,6 +1347,16 @@ width: 30%;
       top: 0px;
       height: 100vh; 
      
+  }
+  #end{
+    display: flex;
+    border: 20px solid #fafafa;
+    border-radius: 20px;
+    position: absolute;
+    bottom: -20px;
+    width: 75%;
+    z-index: 1000;
+   
   }
   
   
