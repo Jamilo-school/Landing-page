@@ -1350,7 +1350,7 @@ width: 30%;
   }
   #end{
     display: flex;
-    border: 20px solid #d8d5d0;
+    border: 20px solid #eaeae7;
     border-radius: 20px;
     position: absolute;
     bottom: -20px;
