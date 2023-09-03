@@ -974,6 +974,7 @@ textarea.input {
   }
   .title{
     text-align: center;
+   
   }
   .subsection.one{
     display: grid;
@@ -1244,8 +1245,12 @@ textarea.input {
     font-size: 1.2rem;
   }
 
-  .title,h2 {
-    font-size: 1.15rem;
+  .title {
+    font-size: 2.15rem;
+    text-align: center;
+  }
+  h2 {
+    font-size: 1.5rem;
     text-align: center;
   }
 
