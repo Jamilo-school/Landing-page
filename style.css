@@ -56,6 +56,11 @@ main{
   right: 100px;
   
 }
+.repondscreen{
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+
+}
 
 .submenu{
   display: inline-block;
@@ -79,6 +84,8 @@ p#nav.text:hover{
 
 
 }
+
+
 .showSignUp.btn:hover{
   box-shadow: 3px 3px 3px red;
   backdrop-filter: blur(10px);
@@ -149,13 +156,19 @@ a{
 }
 
 #levels{
+  border-radius: 20px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
   border: 6px solid #fafafa;
+ 
+  padding-bottom: 8px;
   background: linear-gradient(45deg,#8c9393,#3d098d,#d11d56,#181ecd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  font-weight: bold;
+  margin: 3px;
+  padding: 8px;
+ 
+ 
   
  
  
@@ -168,9 +181,9 @@ a{
   padding: 5px;
   border-radius: 5px;
  
+  
 }
-
-#mrks{
+  #mrks{
   border: solid #fafafa;
   background-color:transparent;
   color: red;
@@ -180,6 +193,7 @@ a{
 }
 
 #titledownloads{
+  font-weight: bold;
   border-radius: 20px;
   font-size: 25px;
   height: 26px;
@@ -273,6 +287,8 @@ width:120px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+  font-size: 20px;
+ 
 
 }
   h4{
@@ -290,13 +306,7 @@ width:120px;
   height: 60px;
   left: 500px;
 }
-#bottom{
-  background-color: #2db499;
-  position: absolute;
-  left: 420px;
-  top: 640px;
-  height: 30px;
-}
+
 
 .form-one{
   top: 23px;
@@ -563,20 +573,35 @@ textarea.input {
 
 .icon {
   width: 28px;
-  margin-right: 0.7rem;
+  margin: 0.7rem;
 }
 
 .social-media {
   padding: 2rem 0 0 0;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 .social-media p {
   color: #333;
+ 
 }
+#end{
+  display: none;
+  border: 20px solid #fafafa;
+  border-radius: 20px;
+  position: absolute;
+  bottom: -20px;
+  width: 200%;
+  z-index: 1000;
+ 
+}
+
+
 
 .social-icons {
   display: flex;
-  margin-top: 0.5rem;
+  margin: 0.5rem;
 }
 
 .social-icons a {
@@ -886,6 +911,281 @@ textarea.input {
 
 /* //////////////////////////////// */
 
+/* //////////////Pop up message verification box/////////////////////// */
+
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px) ;
+  z-index: 10000;
+}
+
+/* Your other styles here */
+
+
+/* Microsoft log in page made by: csozi | Website: english.csozi.hu*/
+
+.form2 {
+  /*Scale only to make it look right on the preview*/
+  
+    scale: 0.8;
+    background-color: #ffffff;
+    height: 490px;
+    width: auto;
+    border: 2px solid #fafafa;
+  box-sizing: content-box;
+  padding: 25px;
+  transition-timing-function: ease-in;
+  color: #225c51;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  z-index: 10000;
+ 
+
+}
+.logoinmicrosoft{
+  border-radius: 6px;
+  width: 10%;
+  position: fixed;
+  right: 20px;
+  top: 15px;
+  height: 10%;
+ 
+}
+.textmic{
+  background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form2 .titlemic {
+  font-weight: bold;
+  font-size: 2.0rem;
+  background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0;
+  margin-top: 26px;
+  margin-bottom: 22px;
+ 
+ 
+  border-radius: 20px;
+    font-family: "Segoe UI","Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+  }
+
+.form2 .email,.password {
+  width: 100%;
+  padding: 6px 10px 6px 0px;
+  border-style: solid;
+  border-width: 0px;
+  border-bottom-width: 1px;
+  border-color: rgba(0, 0, 0, 0.6);
+  height: 36px;
+  outline: none;
+  background-color: transparent;
+  padding-left: 0;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.form2 .email {
+  border-color: rgba(0, 0, 0, 0.8);
+}
+
+.form2 .textmic {
+  color: #1b1b1b;
+  font-family: "Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+  font-weight: 400;
+  line-height: 1.25rem;
+  margin-bottom: 16px;
+  font-size: .8125rem;
+}
+
+.form2 .textmic a {
+  color: #7c8489;
+}
+
+.form2 .button_row {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  height: fit-content;
+  gap: 4px;
+  
+}
+
+.form .button_row .button {
+  width: 108px;
+  height: 32px;
+  box-sizing: content-box;
+  padding: 4 12 4 12;
+  border: none;
+  font-size: 15px;
+}
+
+.form2 .button_row .secondary_button {
+  background-color: #005da6;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: middle;
+  text-overflow: ellipsis;
+  touch-action: manipulation;
+  color: white;
+  cursor: pointer;
+  width: 30%;
+  padding: 18px;
+  border: 6px solid #fafafafa;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+
+.form2 .button_row .secondary_button:hover {
+  background-color: rgba(0,0,0,0.3);
+}
+
+.form2 .button_row .primary_button {
+  background-color: red;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+width: 30%;
+  padding: 8px;
+  border-radius: 20px;
+  border: 6px solid #fafafafa;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+}
+
+.form2 .button_row .primary_button:hover {
+  background-color: #005da6;
+
+}
+.popupclose{
+  background-color: #005da6;
+  border: 6px solid #fafafafa;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 10px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  
+}
+
+/* ///////////////loder start/////////////////// */
+
+.loader {
+  border: 4px solid#005da6;
+  border-left-color: transparent;
+  border-radius: 50%;
+  position:fixed;
+  left: 18px;
+  top: 18px;
+  
+}
+
+.loader {
+  border: 4px solid #005da6;
+  border-left-color: transparent;
+  width: 36px;
+  height: 36px;
+  
+}
+#mintitles{
+  font-size: 25px;
+}
+
+.loader {
+  border: 4px solid #e0dada;
+  border-left-color: transparent;
+  width: 36px;
+  height: 36px;
+  animation: spin89345 1s linear infinite;
+  
+}
+
+@keyframes spin89345 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* /////////////Ednd loder start///////////////////// */
+/* /////////////loder 2 miamia start///////////////////// */
+
+
+.ld-ripple {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  position: fixed;
+   right: 80px;
+  top: 10px;
+ 
+}
+
+.ld-ripple div {
+  position: absolute;
+  border: 4px solid #e0dbdb;
+  opacity: 1;
+  border-radius: 50%;
+  animation: ld-ripple 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.ld-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+
+@keyframes ld-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+
+  
+}
+/* /////////////loder 2 miamia Ends///////////////////// */
 
 @media (max-width: 850px) {
   /* navbar */
@@ -893,6 +1193,17 @@ textarea.input {
     display: grid;
     grid-template-columns: repeat(3,1fr);
   }
+  #end{
+    display: flex;
+    border: 20px solid #939090;
+    border-radius: 20px;
+    position: absolute;
+    bottom: -20px;
+    width: 90%;
+    z-index: 1000;
+   
+  }
+ 
   
   .navbar{
     margin: auto;
@@ -907,9 +1218,7 @@ textarea.input {
     z-index: 1000;
     
 }
-.right.section {
 
-}
 
 
 
@@ -964,6 +1273,7 @@ textarea.input {
   }
   .title{
     text-align: center;
+   
   }
   .subsection.one{
     display: grid;
@@ -1039,6 +1349,34 @@ textarea.input {
     
     
   }
+  .form2{
+   
+      top: 20px;
+      height: 100vh; 
+     
+  }
+  .form2 .titlemic{
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  #end{
+    display: flex;
+    border: 20px solid #eaeae7;
+    border-radius: 20px;
+    position: absolute;
+    bottom: -20px;
+    width: 75%;
+    z-index: 1000;
+   
+  }
+  
+  
+     
+  
+  .repondscreen{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   }
   li.submenu{
   margin-right: 5px;
   margin-left: 5px;
@@ -1120,9 +1458,10 @@ textarea.input {
   .subsection.one,.right.section {
     display: grid;
     grid-template-columns: repeat(2,1fr);
+  
     
   }
-  .success-button-container,.designspopup {
+  .success-button-container {
      grid-template-columns: repeat(2,1fr);
      width: 100%;
 
@@ -1167,6 +1506,7 @@ textarea.input {
   }
   .nametags{
     font-size: 15px;
+  
   }
  
     
@@ -1196,6 +1536,11 @@ textarea.input {
   max-width: 1100px;
   
 }
+#levels{
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-weight: bold;
+}
 
   .contact-info:before {
     display: none;
@@ -1220,8 +1565,12 @@ textarea.input {
     font-size: 1.2rem;
   }
 
-  .title,h2 {
-    font-size: 1.15rem;
+  .title {
+    font-size: 2.15rem;
+    text-align: center;
+  }
+  h2 {
+    font-size: 1.5rem;
     text-align: center;
   }
 
@@ -1242,182 +1591,17 @@ textarea.input {
   .btn {
     padding: 0.45rem 1.2rem;
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-/* //////////////Pop up message verification box/////////////////////// */
-
-.popup-container {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1000;
-  backdrop-filter: blur(5px) ;
+  
   
 }
 
-/* Your other styles here */
-
-
-/* Microsoft log in page made by: csozi | Website: english.csozi.hu*/
-
-.form2 {
-/*Scale only to make it look right on the preview*/
-  scale: 0.9;
-  background-color: #ffffff;
-  overflow: auto;
-  width: auto;
-  height: 600px;
-  box-sizing: content-box;
-  padding: 44px;
-  transition-timing-function: ease-in;
-  color: #225c51;
-  border-radius: 20px;
-  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
-
- 
-
-}
-.logoinmicrosoft{
-  border-radius: 6px;
-  width: 10%;
-  position: fixed;
-  right: 20px;
-  top: 15px;
-  height: 10%;
- 
-}
-.textmic{
-  background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.form2 .titlemic {
-  font-weight: bold;
-  font-weight: 700;
-  font-size: 1.9rem;
-  background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding: 0;
-  margin-top: 16px;
-  margin-bottom: 12px;
-  font-family: "Segoe UI","Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
-}
-
-.form2 .email,.password {
-  width: 100%;
-  padding: 6px 10px 6px 0px;
-  border-style: solid;
-  border-width: 0px;
-  border-bottom-width: 1px;
-  border-color: rgba(0, 0, 0, 0.6);
-  height: 36px;
-  outline: none;
-  background-color: transparent;
-  padding-left: 0;
-  color: #000000;
-  margin-bottom: 16px;
-}
-
-.form2 .email {
-  border-color: rgba(0, 0, 0, 0.8);
-}
-
-.form2 .textmic {
-  color: #1b1b1b;
-  font-family: "Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
-  font-weight: 400;
-  line-height: 1.25rem;
-  margin-bottom: 16px;
-  font-size: .8125rem;
-}
-
-.form2 .textmic a {
-  color: #7c8489;
-}
-
-.form2 .button_row {
-  width: 100%;
-  display: flex;
-  justify-content: end;
-  height: fit-content;
-  gap: 4px;
-  
-}
-
-.form .button_row .button {
-  width: 108px;
-  height: 32px;
-  box-sizing: content-box;
-  padding: 4 12 4 12;
-  border: none;
-  font-size: 15px;
-}
-.popupclose{
-  background-color: #005da6;
-  color: white;
- float: right;
- border: 6px solid #fafafafa;
- border-radius: 20px;
- padding: 10px;
-}
-
-.form2 .button_row .secondary_button {
-  background-color: #005da6;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  vertical-align: middle;
-  text-overflow: ellipsis;
-  touch-action: manipulation;
-  color: white;
-  cursor: pointer;
-  width: 30%;
-  padding: 18px;
-  border: 6px solid #fafafafa;
-  border-radius: 20px;
-  margin-right: 10px;
-}
-
-
-.form2 .button_row .secondary_button:hover {
-  background-color: rgba(0,0,0,0.3);
-}
-
-.form2 .button_row .primary_button {
-  background-color: red;
-  font-weight: bold;
-  color: #ffffff;
-  cursor: pointer;
-width: 30%;
-  padding: 8px;
-  border-radius: 20px;
-  border: 6px solid #fafafafa;
-  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
-}
-
-.form2 .button_row .primary_button:hover {
-  background-color: #005da6;
-
-}
 
 
 
 
 
 
-/* ////////////////////////////////// */
+
+
+
+
