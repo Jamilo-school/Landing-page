@@ -596,9 +596,6 @@ textarea.input {
   z-index: 1000;
  
 }
-#close{
-  color: #9b9898;
-}
 
 
 
@@ -1353,11 +1350,9 @@ width: 30%;
     
   }
   .form2{
-    height: 390px;
-    width: 300px;
    
       top: 20px;
-   
+      height: 100vh; 
      
   }
   .form2 .titlemic{
