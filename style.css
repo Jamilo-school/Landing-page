@@ -25,6 +25,7 @@ main{
 .navbar{
   display: flex;
   justify-content: space-between;
+  width: 100%;
   top: -19px;
   height: 10vh;
   margin-left: 100px;
@@ -38,7 +39,7 @@ main{
 }
 .nav-menu{
   display: flex;
-  width: 190%;
+  width: 90%;
   top: -19px;
   height: 20vh;
   margin: auto;
@@ -1499,10 +1500,11 @@ width: 30%;
   margin-left: 5px;
   }
   .QRCODE{
-    width: 40%;
-    height: 10%;
-    float: right;
+    width: 30%;
+    height: 4%;
     border: 3px solid rgb(231, 220, 127);
+    top: -80px;
+    margin-right: 40px;
   }
   .schoollogo{
     width: 40%;
