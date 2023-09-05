@@ -30,6 +30,7 @@ function showPopup(grade, male, female,total, classTeacher,theyear,update) {
 
 function hidePopup() {
   document.getElementById("popup").style.display = "none";
+  document.getElementById("close").style.display = "none";
 }
 
 function getCurrentDateTime() {
