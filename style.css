@@ -605,16 +605,7 @@ background-clip: text;
   color: #333;
  
 }
-#end{
-  display: none;
-  border: 20px solid #fafafa;
-  border-radius: 20px;
-  position: absolute;
-  bottom: -20px;
-  width: 200%;
-  z-index: 1000;
- 
-}
+
 
 
 
@@ -1523,16 +1514,7 @@ width: 30%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
   }
-  #end{
-    display: flex;
-    border: 20px solid #939090;
-    border-radius: 20px;
-    position: absolute;
-    bottom: -20px;
-    width: 90%;
-    z-index: 1000;
-   
-  }
+ 
   
  
   
@@ -1678,6 +1660,13 @@ width: 30%;
    
    
   }
+  .QRCODE{
+    width: 30%;
+    height: 4%;
+    border: 3px solid rgb(231, 220, 127);
+    top: -180px;
+    margin-right: 40px;
+  }
  
 
 }
@@ -1703,11 +1692,10 @@ width: 30%;
   }
   #end{
     display: flex;
-    border: 20px solid #eaeae7;
+    border: 20px solid #f7f7f5;
     border-radius: 20px;
-    position: absolute;
     bottom: -20px;
-    width: 75%;
+    width: auto;
     z-index: 1000;
    
   }
@@ -1727,7 +1715,7 @@ width: 30%;
     width: 30%;
     height: 4%;
     border: 3px solid rgb(231, 220, 127);
-    top: -80px;
+    top: -180px;
     margin-right: 40px;
   }
   .schoollogo{
