@@ -1922,6 +1922,13 @@ width: 30%;
   .btn {
     padding: 0.45rem 1.2rem;
   }
+  .icons{
+    position: absolute;
+    top: -1px;
+    left: 12px;
+   
+    
+  }
   
   
 }
