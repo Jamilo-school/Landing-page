@@ -1715,8 +1715,8 @@ width: 30%;
     width: 30%;
     height: 4%;
     border: 3px solid rgb(231, 220, 127);
-    top: -180px;
-    margin-right: 40px;
+    top: -170px;
+    margin-right: -10px;
   }
   .schoollogo{
     width: 40%;
