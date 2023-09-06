@@ -185,6 +185,13 @@ background-clip: text;
  
   
 }
+.icons{
+  position: absolute;
+  top: 2px;
+  left: 20px;
+  
+}
+
   #mrks{
   border: solid #fafafa;
   background-color:transparent;
