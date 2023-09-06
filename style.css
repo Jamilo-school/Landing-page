@@ -163,7 +163,8 @@ a{
  
   padding-bottom: 8px;
   background: linear-gradient(45deg,#8c9393,#3d098d,#d11d56,#181ecd);
-  -webkit-background-clip: text;
+-webkit-background-clip: text;
+background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
   margin: 3px;
@@ -210,7 +211,9 @@ a{
   top: 790px;
   font-size: 30px;
   background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);
-  -webkit-background-clip: text;
+-webkit-background-clip: text;
+background-clip: text;
+
   -webkit-text-fill-color: transparent;
   font-weight: bold;
   left: 500px;
@@ -285,7 +288,9 @@ width:120px;
 
 .nametags,.btn1{
   background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);
-  -webkit-background-clip: text;
+-webkit-background-clip: text;
+background-clip: text;
+
   -webkit-text-fill-color: transparent;
   font-weight: bold;
   font-size: 20px;
@@ -541,12 +546,14 @@ textarea.input {
   font-size: 1.3rem;
   margin: 1.5rem 0 2rem 0;
   background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);
-  -webkit-background-clip: text;
+-webkit-background-clip: text;
+background-clip: text;
+
   -webkit-text-fill-color: transparent;
   text-align: center;
   border: 5px solid #fafafa;
   border-radius: 25px;
-PTAinfo
+
   
 }
 .text1{
@@ -555,7 +562,9 @@ PTAinfo
     font-size: 1.3rem;
     margin: 1.5rem 0 2rem 0;
     background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);
-    -webkit-background-clip: text;
+  -webkit-background-clip: text;
+background-clip: text;
+
     -webkit-text-fill-color: transparent;
     text-align: center;
 
@@ -757,7 +766,9 @@ PTAinfo
   transition: 0.3s;
   margin: 3px;
   background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);
-  -webkit-background-clip: text;
+-webkit-background-clip: text;
+background-clip: text;
+
   -webkit-text-fill-color: transparent;
   text-align: center;
 
@@ -849,7 +860,9 @@ PTAinfo
 }
 .btn{
   background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);
-  -webkit-background-clip: text;
+-webkit-background-clip: text;
+background-clip: text;
+
   -webkit-text-fill-color: transparent;
 }
 
@@ -963,7 +976,9 @@ PTAinfo
 }
 .textmic{
   background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);
-  -webkit-background-clip: text;
+-webkit-background-clip: text;
+background-clip: text;
+
   -webkit-text-fill-color: transparent;
 }
 
@@ -971,7 +986,9 @@ PTAinfo
   font-weight: bold;
   font-size: 2.0rem;
   background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);
-  -webkit-background-clip: text;
+-webkit-background-clip: text;
+background-clip: text;
+
   -webkit-text-fill-color: transparent;
   padding: 0;
   margin-top: 26px;
