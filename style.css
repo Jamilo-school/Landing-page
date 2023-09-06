@@ -9,6 +9,7 @@ body,
 input,
 textarea {
   font-family: "Poppins", sans-serif;
+  background-color: #fafafa;
 }
 main{
    backdrop-filter: blur(10px);
@@ -1197,6 +1198,7 @@ width: 30%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  
  
 }
 
@@ -1280,10 +1282,11 @@ width: 30%;
 }
 .PTA{
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(4,1fr);
   gap: 1rem;
   margin-right: 40px;
   margin-left: 40px;
+ 
 }
 #PTAinfo{
   border: 4px solid #fff;
@@ -1292,6 +1295,18 @@ width: 30%;
 
 /* /////////////loder Class parents representatives End///////////////////// */
 
+.section2{
+  margin-top: 10px;
+  background-color: #fff;
+  padding: 10px;
+  margin-left: 30px;
+  margin-right: 3dvh;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1)
+}
+#PTAtitle{
+  text-align: center;
+}
 
 @media (max-width: 850px) {
   /* navbar */
