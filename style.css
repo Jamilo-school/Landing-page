@@ -149,12 +149,15 @@ a{
   background-color: #fafafa;
   overflow: hidden;
   display: flex;
+  border: solid red;
+  margin:30px ;
   align-items: center;
   justify-content: center;
 }
 .sections{
   display: grid;
   grid-template-columns: repeat(2,1fr);
+  border: solid rgb(21, 10, 10);
 
 }
 
@@ -333,7 +336,7 @@ background-clip: text;
 
 
 .form-one{
-  top: 23px;
+  top: 2003px;
   width: 100%;
   max-width: 1200px;
   background-color: #fff;
@@ -341,7 +344,10 @@ background-clip: text;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   display: grid;
+  padding-left: 15px;
+  padding-right: 10px;
   grid-template-columns: repeat(2, 1fr);
+ 
 }
 
 .form {
@@ -399,7 +405,7 @@ form {
   position: relative;
 }
 
-.title,h2 {
+.title {
   color: #fff;
   font-weight: 500;
   font-size: 2rem;
@@ -640,6 +646,7 @@ background-clip: text;
 .social-icons a:hover {
   transform: scale(1.05);
 }
+
 
 .contact-info:before {
   content: "";
