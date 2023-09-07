@@ -399,13 +399,14 @@ form {
   position: relative;
 }
 
-.title {
+.title,h2 {
   color: #fff;
   font-weight: 500;
   font-size: 2rem;
   line-height: 1;
   margin-bottom: 0.7rem;
   margin-left: 50px;
+  font-weight: bold;
 }
 
 .input-container {
