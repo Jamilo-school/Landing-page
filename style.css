@@ -1515,6 +1515,11 @@ width: 30%;
   z-index: 1000;
  
 }
+@media (max-width: 966px){
+  .PTA{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;}}
 
 
 
@@ -1663,6 +1668,12 @@ width: 30%;
     margin-bottom: 30px;
   }
 }
+@media (max-width: 960px){
+  .PTA{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;}}
+
 @media (max-width: 640px){
   .PTA{
     display: grid;
