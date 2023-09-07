@@ -1301,8 +1301,8 @@ width: 30%;
   display: grid;
   grid-template-columns: repeat(4,1fr);
   gap: 1rem;
-  margin-right: 15px;
-  margin-left: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
  
 }
 #PTAinfo{
