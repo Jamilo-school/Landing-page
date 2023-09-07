@@ -133,12 +133,12 @@ a{
 }
 .QRCODE{
   position: relative;
-  width: 120px;
+  width: 8%;
   border: 3px solid rgb(231, 220, 127);
   border-radius: 10px;
-  height:120px;
+  height:100px;
 
-  top:-170px;
+  top:-150px;
   right: 20px;
 }
 .container {
@@ -178,15 +178,6 @@ background-clip: text;
   
  
  
-}
-footer {
-  background: linear-gradient(45deg,#8c9393,#3d098d,#d11d56,#181ecd);
-  -webkit-background-clip: text;
-  background-clip: text;
-    -webkit-text-fill-color: transparent;
-   position: sticky;
-   bottom: 1px;
-   text-align: center;
 }
 #learnerspic{
   width: 100%;
@@ -1535,16 +1526,8 @@ width: 30%;
 @media (max-width: 966px){
   .PTA{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 1rem;}
-    .QRCODE{
-      width: 120px;
-      height: 120px;
-      border: 3px solid rgb(231, 220, 127);
-      top: -180px;
-      margin-right: 40px;
-    }
-  }
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;}}
 
 
 
@@ -1555,10 +1538,7 @@ width: 30%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
   }
-  .PTA{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 1rem;}
+ 
   
  
   
@@ -1695,15 +1675,12 @@ width: 30%;
     z-index: 1000;
     margin-bottom: 30px;
   }
-  .QRCODE{
-    width: 120px;
-    height: 120px;
-    border: 3px solid rgb(231, 220, 127);
-    top: -180px;
-    margin-right: 40px;
-  }
 }
-
+@media (max-width: 960px){
+  .PTA{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;}}
 
 @media (max-width: 640px){
   .PTA{
