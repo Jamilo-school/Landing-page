@@ -1343,16 +1343,6 @@ width: 30%;
 .card:hover {
   transform: scale(1.05);
 }
-.contacts{
-  color: #9d9d9d;
-  box-shadow: none;
- font-weight: bold;
- background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);
- -webkit-background-clip: text;
- background-clip: text;
- 
-   -webkit-text-fill-color: transparent;
-}
 
 .containerCAD {
   width: 250px;
