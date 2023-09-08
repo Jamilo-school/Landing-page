@@ -94,6 +94,7 @@ p#nav.text:hover{
   transition: 0.7s ease;
   border-style: dashed;
   border: none;
+  transform: scale(1.05);
 }
 
 #expandcomputations{
