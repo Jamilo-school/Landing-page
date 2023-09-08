@@ -915,6 +915,7 @@ background-clip: text;
   line-height: 1.25rem;
   border-radius: 0.375rem;
   border: none;
+ 
 }
 .img-right{
   width: 100%;
@@ -1515,6 +1516,12 @@ width: 30%;
   bottom: -20px;
   width: auto;
   z-index: 1000;
+ 
+}
+.contacts{
+  color: #574D33;
+  box-shadow: none;
+  font-weight: bold;
  
 }
 
