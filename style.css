@@ -1243,9 +1243,8 @@ width: 30%;
   
 }
 .succes:hover{
-   transform: scale(1.05);
    transform: rotateX('80deg');
-   box-shadow: 0 0 20px 1px rgb(191, 234, 225);
+   box-shadow: 0 0 20px 1px rgb(79, 238, 235);
  
 }
 .succes-svg {
@@ -1506,7 +1505,7 @@ width: 30%;
 .section3{
 border-radius: 20px;
 margin: 0px 20px 0px 20pX;
-background-image: url(./img/pic3.png);
+background-image: url(./img/pic\ 10.webp);
 }
 .sec1btmimg:hover{
   transform: scale(1.06);
