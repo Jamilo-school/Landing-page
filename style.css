@@ -56,6 +56,7 @@ main{
   position: fixed;
   right: 100px;
   
+  
 }
 .repondscreen{
  display: grid;
@@ -82,6 +83,7 @@ p#nav.text:hover{
   transition: 0.7s ease;
   border-style: dashed;
   border: none;
+ 
 
 
 }
@@ -1491,9 +1493,24 @@ width: 30%;
   background: rgba(0, 0, 0, 0.06);
   border-radius: 9px;
 }
+
 .sec1btmimg{
-  width: 95%;
-  height: 30%;
+  width: 96%;
+  height:auto;
+  position: sticky;
+  
+ 
+
+
+}
+.section3{
+border-radius: 20px;
+margin: 0px 20px 0px 20pX;
+background-image: url(./img/pic3.png);
+}
+.sec1btmimg:hover{
+  transform: scale(1.06);
+
 }
 
 .temp-scale span {
@@ -1514,7 +1531,10 @@ width: 30%;
   margin-left: 30px;
   margin-right: 3dvh;
   border-radius: 20px;
-  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1)
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  background-image: url(./img/pic1..png);
+  backdrop-filter: blur(15px);
+  background-size: cover;
 }
 #PTAtitle{
   text-align: center;
