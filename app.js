@@ -60,7 +60,7 @@ document.querySelectorAll("nav").forEach(n => n.
 
    //Pop up log in for nemis starts
 
-const showSignUpButtons = document.querySelectorAll('.showSignUp');
+const showSignUpButtons = document.querySelectorAll('.showSignUp','.notnoww');
 const popupContainers = document.querySelectorAll('.popup-container');
 
 showSignUpButtons.forEach((button, index) => {
