@@ -1262,10 +1262,7 @@ width: 30%;
   color: rgb(22 101 52);
   
 }
-#ip{
-  width: 700px;
- 
-}
+
 
 .success-prompt-prompt {
   margin-top: 0.5rem;
@@ -1443,7 +1440,7 @@ width: 30%;
 }
 /* /////////////Staff SMS section pop up END///////////////////// */
 /* /////////////Staff CALL section pop up START///////////////////// */
-.notifications-container {
+.notifications-containerforcall {
   width: 320px;
   height: auto;
   font-size: 0.875rem;
