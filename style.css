@@ -192,7 +192,7 @@ background-clip: text;
 }
 .icons{
   position: absolute;
-  top: 2px;
+  top: -5px;
   left: 20px;
   
 }
