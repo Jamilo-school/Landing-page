@@ -1588,10 +1588,10 @@ width: 30%;
 
 .card-header span:first-child {
   word-break: break-all;
-  font-weight: 800;
+  font-weight: 1800;
   font-size: 15px;
   line-height: 135%;
-  color: rgba(87, 77, 51, 0.66);
+  color: rgba(87, 77, 51, 1);
 }
 
 .card-header span:last-child {
