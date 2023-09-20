@@ -954,7 +954,7 @@ background-clip: text;
 
 .form2 {
   /*Scale only to make it look right on the preview*/
-  
+  border:4px solid black;
     scale: 0.8;
     height: 490px;
 backdrop-filter: blur (10px);
