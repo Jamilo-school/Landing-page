@@ -15,21 +15,24 @@
  <main></main>
   <nav>
     <div class="navbar">
+  
       <ul class="nav-menu">
       
         
-
+        <div class="marquee">
         
                 <li class="submenu"><a href="#staff"><p class="text"  id="nav">Staff</p></a></li>
                 <li class="submenu"><a href="https://jamilo-school.github.io/Admissions/" target="_blank"><p class="text"  id="nav">Admissions</p></a></li>
         <li class="submenu"><a href="https://jamilo-school.github.io/Academics/" target="_blank"><p class="text"  id="nav">Academics</p></a></li>
         <li class="submenu"><a href="#"onclick="alert('Coming soon.Keep checking for Updates')"  target="_blank"><p class="text" id="nav">Circulars</p></a></li>
         <li class="submenu"><a href="https://jamilo-school.github.io/students-portal-level-selection/" target="_blank"><p class="text" id="nav">Students</p></a></li>
-        <li class="submenu"><a href="#" target="_blank"><p class="text" id="nav" onclick="alert('Coming soon')" target="_blank">Media</p></a></li>
-        
+        <li class="submenu"><a href="https://lms.kec.ac.ke/course/index.php" target="_blank"><p class="text" id="nav"  target="_blank">E-learning</p></a></li>
+        <li class="submenu"><a href="#" onclick="alert('coming soon keep checking') " target="_blank"><p class="text" id="nav"  target="_blank">Media</p></a></li>
+       
   
         <li class="submenu"><p class="showSignUp btn" id="nav"> <b class="admintab">Alumni</b></p></li>
       </ul>
+    </div>
     </nav>
     <div class="hamburger">
       <span class="bar"></span>
@@ -698,14 +701,7 @@ background-clip: text;
                   Mrkng schme</a><br></h4><br>
                </div>
 
-               <div class="one">
-                <img src="./img/smart Kid.png" alt="./1.DESIGNS/Grade 7/" target="_blank" class="profile"><br><h4 class="nametags" id="class">KCPE</h4>
-                 <h4 class="nametags"><a href="./pdfs/SMART KID I.C.T paper.pdf" target="_blank" id="mrks" target="_blank">🩺2023🩺</a></h4><br>
-                 <h4 class="nametags"><a href="./pdfs/Marking scheme SMART KID I.C.T paper.pdf" download  id="mrks">
-                   <di class="svg">
-                   <svg height="27" width="16" viewBox="3 0 9 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M1 14.5a6.496 6.496 0 0 1 3.064-5.519 8.001 8.001 0 0 1 15.872 0 6.5 6.5 0 0 1-2.936 12L7 21c-3.356-.274-6-3.078-6-6.5zm15.848 4.487a4.5 4.5 0 0 0 2.03-8.309l-.807-.503-.12-.942a6.001 6.001 0 0 0-11.903 0l-.12.942-.805.503a4.5 4.5 0 0 0 2.029 8.309l.173.013h9.35l.173-.013zM13 12h3l-4 5-4-5h3V8h2v4z" fill="currentColor"></path></svg>
-                  Mrkng schme</a><br></h4><br>
-               </div>
+               
                
              
               
@@ -2516,7 +2512,15 @@ background-clip: text;
     </div>
   </div>
   
-   
+   <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const marquee = document.querySelector('.marquee');
+    marquee.addEventListener('animationiteration', () => {
+        marquee.style.animation = 'none'; // Stop the animation after one iteration
+    });
+});
+
+   </script>
    
 
     <script src="app.js"></script>

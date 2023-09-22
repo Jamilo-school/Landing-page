@@ -38,16 +38,38 @@ main{
   
  
 }
+
+
+.marquee {
+  white-space: nowrap; /* Prevent text from wrapping */
+  position: absolute; /* Position it wherever you want */
+  animation: marquee 1s linear; /* Adjust the duration (5s in this example) */
+}
+/* WebKit-based browsers */
+::-webkit-scrollbar {
+  width: 12px; /* You can adjust the width as needed */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:transparent;
+}
+
+
+@keyframes marquee {
+  0% { left: 100%; }
+  100% { left: -100%; }
+}
+
 .nav-menu{
   display: flex;
-  width: 90%;
-  top: -19px;
+  width: 100%;
+  top: -25px;
   height: 20vh;
-  margin: auto;
+  margin-left: 40px;
   align-items: center;
-  border-radius: 10px;
   left: -30px;
-  gap: 3px;
+  gap: 1px;
+ overflow: auto;
 
 
   
@@ -66,7 +88,7 @@ main{
 
 .submenu{
   display: inline-block;
-  margin: 30px 30px;
+  margin-left: 20px;
   list-style: none;
   font-weight: bold;
 
@@ -1698,7 +1720,6 @@ color: #45e6ef;
   font-weight: bold;
  
 }
-
 @media (max-width: 1142px){
   .PTA{
     display: grid;
@@ -1722,10 +1743,16 @@ color: #45e6ef;
   .nav-menu{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    height: 100vh;
+    border: none;
   }
  
-  
- 
+
+  .marquee{
+    display: grid;
+    width: 100%;
+   
+  }
   
   .navbar{
     margin: auto;
