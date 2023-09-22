@@ -74,7 +74,7 @@ main{
   border-radius: 10px;
   left: -30px;
   gap: 1px;
-\
+
 
 
   
@@ -93,7 +93,7 @@ main{
 
 .submenu{
   display: inline-block;
-  margin: 30px 30px;
+  margin: 40px;
   list-style: none;
   font-weight: bold;
 
