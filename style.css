@@ -67,15 +67,15 @@ main{
 
 .nav-menu{
   display: flex;
-  width: 100%;
-  top: -25px;
+  width: 90%;
+  top: -19px;
   height: 20vh;
-  margin-left: 40px;
+  margin: auto;
   align-items: center;
+  border-radius: 10px;
   left: -30px;
   gap: 1px;
  overflow: auto;
-
 
 
   
@@ -94,7 +94,7 @@ main{
 
 .submenu{
   display: inline-block;
-  margin-left: 20px;
+  margin: 30px 30px;
   list-style: none;
   font-weight: bold;
 
@@ -1735,6 +1735,7 @@ color: #45e6ef;
   font-weight: bold;
  
 }
+
 @media (max-width: 1142px){
   .PTA{
     display: grid;
@@ -1758,19 +1759,10 @@ color: #45e6ef;
   .nav-menu{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    height: 100vh;
-    border: none;
-    overflow: auto;
-    backdrop-filter: blur(10px);
-  
   }
  
-
-  .marquee{
-    display: grid;
-    width: 100%;
-   
-  }
+  
+ 
   
   .navbar{
     margin: auto;
