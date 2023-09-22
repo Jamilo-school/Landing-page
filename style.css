@@ -93,7 +93,7 @@ main{
 
 .submenu{
   display: inline-block;
-  margin: 40px;
+  margin-left: 25px;
   list-style: none;
   font-weight: bold;
 
