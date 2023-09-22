@@ -43,15 +43,19 @@ main{
 .marquee {
   white-space: nowrap; /* Prevent text from wrapping */
   position: absolute; /* Position it wherever you want */
-  animation: marquee 1s linear; /* Adjust the duration (5s in this example) */
+  animation: marquee 3s linear; /* Adjust the duration (5s in this example) */
 }
 /* WebKit-based browsers */
 ::-webkit-scrollbar {
-  width: 12px; /* You can adjust the width as needed */
+  width: 8px; /* You can adjust the width as needed */
+ 
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color:transparent;
+  background-color:rgba(67, 118, 228, 0.977);
+  border-radius: 20px;
+  height: 2px;
+ 
 }
 
 
@@ -1745,6 +1749,8 @@ color: #45e6ef;
     grid-template-columns: repeat(3,1fr);
     height: 100vh;
     border: none;
+    overflow: auto;
+  
   }
  
 
