@@ -1749,6 +1749,17 @@ color: #45e6ef;
   .nav-menu{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    overflow: auto;
+    height: 90vh;
+    justify-content: center;
+   
+
+  }
+  .submenu{
+    display: grid;
+    margin-left: 6px;
+   
+    
   }
  
   
