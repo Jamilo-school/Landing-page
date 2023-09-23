@@ -44,6 +44,8 @@ main{
   white-space: nowrap; /* Prevent text from wrapping */
   position: absolute; /* Position it wherever you want */
   animation: marquee 3s linear; /* Adjust the duration (5s in this example) */
+  z-index: 1000px;
+
 }
 /* WebKit-based browsers */
 ::-webkit-scrollbar {
@@ -52,7 +54,7 @@ main{
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color:rgba(67, 118, 228, 0.977);
+  background-color:transparent;
   border-radius: 20px;
   height: 2px;
  
@@ -72,8 +74,8 @@ main{
   margin: auto;
   align-items: center;
   border-radius: 10px;
-  left: -30px;
   gap: 1px;
+ 
 
 
 
@@ -1725,6 +1727,13 @@ color: #45e6ef;
   font-weight: bold;
  
 }
+@media (max-width: 1142px){
+  .nav-menu{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    overflow: auto;
+}
 
 @media (max-width: 1142px){
   .PTA{
@@ -1749,15 +1758,18 @@ color: #45e6ef;
   .nav-menu{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    overflow: auto;
-    height: 90vh;
-    justify-content: center;
+    width: 100%;
+    height: 80vh;
+   
+   
    
 
   }
-  .submenu{
+  .marquee{
     display: grid;
     margin-left: 6px;
+    width: auto;
+    margin-left: 40%;
    
     
   }
@@ -1942,6 +1954,7 @@ color: #45e6ef;
     
     
   }
+  
   .form2{
    
       top: 20px;
