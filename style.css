@@ -98,6 +98,7 @@ main{
   margin-left: 25px;
   list-style: none;
   font-weight: bold;
+  margin-top: -20px;
 
  
 }
@@ -1755,7 +1756,7 @@ color: #45e6ef;
   
   .toast-enter {
 	opacity:8;
-	transform: translateY(20px);
+	transform: translateY(60px);
   }
   
   .toast-exit {
