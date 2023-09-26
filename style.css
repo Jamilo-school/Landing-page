@@ -1654,10 +1654,12 @@ width: 30%;
   border-radius: 9px;
 }
 
-.sec1btmimg{
-  width: 85%;
-  height:auto;
+.sec1btnimg{
+  margin-top: 30px;
+  width: 95%;
+  min-height: 300px;
   margin-top: -50px;
+  border-radius: 20px;
   
 
   
@@ -1669,7 +1671,7 @@ width: 30%;
 .section3{
 border-radius: 20px;
 margin: 30px 20px 0px 20pX;
-background-image: url(./img/pic\ 10.webp) ;
+background-image: url(./img/pic4.jpg) ;
 background-size: cover;
 
 
@@ -1732,11 +1734,8 @@ color: #45e6ef;
 
 /* Start of  CSS code for styling the notifications */
 .toast {
- color: black;
- background: linear-gradient(45deg, #002b36, #073642);
- -webkit-background-clip: text;
- background-clip: text;
-   -webkit-text-fill-color: transparent;
+  color: #115d4e;
+ background-color: #D1FAE5;
 	font-size: 16px;
 	transition: all 0.5s ease-in-out;
 	pointer-events: none;
@@ -1746,13 +1745,12 @@ color: #45e6ef;
 	top: -12px;
 	left: 40%;
 	transform: translate(-50%, -50%);
-	background-color: #fff;
 	padding: 20px 10px ;
 	border-radius: 5px;
 	box-shadow: 0px 0px 10px rgba(85, 245, 216, 0.5);
   z-index: 1000;
   backdrop-filter: blur(30px);
-  font-family: monospace;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   z-index: 10000;
   }
   
