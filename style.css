@@ -1732,11 +1732,8 @@ color: #45e6ef;
 
 /* Start of  CSS code for styling the notifications */
 .toast {
- color: black;
- background: linear-gradient(45deg,#8c9393,#3d098d,#d11d56,#181ecd);
- -webkit-background-clip: text;
- background-clip: text;
-   -webkit-text-fill-color: transparent;
+  color: #115d4e;
+ background-color: #D1FAE5;
 	font-size: 16px;
 	transition: all 0.5s ease-in-out;
 	pointer-events: none;
@@ -1746,12 +1743,12 @@ color: #45e6ef;
 	top: -12px;
 	left: 40%;
 	transform: translate(-50%, -50%);
-	background-color: #fff;
 	padding: 20px 10px ;
 	border-radius: 5px;
 	box-shadow: 0px 0px 10px rgba(85, 245, 216, 0.5);
   z-index: 1000;
   backdrop-filter: blur(30px);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   z-index: 10000;
   }
   
