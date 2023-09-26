@@ -417,7 +417,7 @@ background-clip: text;
 }
 
 form {
-  padding: 2.3rem 2.2rem;
+  padding: 2.3rem  2.2rem 0rem;
   z-index: 10;
   overflow: hidden;
   position: relative;
@@ -1733,7 +1733,7 @@ color: #45e6ef;
 /* Start of  CSS code for styling the notifications */
 .toast {
  color: black;
- background: linear-gradient(45deg,#8c9393,#3d098d,#d11d56,#181ecd);
+ background: linear-gradient(45deg, #002b36, #073642);
  -webkit-background-clip: text;
  background-clip: text;
    -webkit-text-fill-color: transparent;
@@ -1752,6 +1752,7 @@ color: #45e6ef;
 	box-shadow: 0px 0px 10px rgba(85, 245, 216, 0.5);
   z-index: 1000;
   backdrop-filter: blur(30px);
+  font-family: monospace;
   z-index: 10000;
   }
   
@@ -1765,6 +1766,29 @@ color: #45e6ef;
 	transform: translateY(0px);
   }
   /* End of  CSS code for styling the notifications */
+
+  .Timetables{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   
+   
+ 
+   
+  
+
+  }
+  .kcpe{
+    margin-bottom: 10px;
+    border: 4px solid #fafafa;
+    align-items: center;
+    justify-content: center;
+
+  }
+  embed{
+    height: 67vh;
+    margin-top: -23px;
+ 
+  }
 
 @media (max-width: 1142px){
   .nav-menu{
@@ -1970,7 +1994,7 @@ color: #45e6ef;
 
 }
 @media (max-width: 640px){
-  .PTA{
+  .PTA,.Timetables{
     display: grid;
     grid-template-columns: repeat(1,1fr);
     gap: 1rem;
