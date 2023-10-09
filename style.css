@@ -1849,6 +1849,12 @@ background-clip: text;
    
 
   }
+  .form2{
+   
+    top: 20px;
+    height: 70vh; 
+    width:90%;
+  
   .marquee{
     display: grid;
     margin-left: 6px;
@@ -2021,12 +2027,18 @@ background-clip: text;
    
    
   }
+  
   .subsection.on{
     display: grid;
     grid-template-columns: repeat(2,1fr);
   
     
   }
+  .form2{
+   
+    top: 20px;
+    height: 70vh; 
+    width:90%;
 }
 
 @media (max-width: 480px) {
@@ -2042,7 +2054,9 @@ background-clip: text;
   .form2{
    
       top: 20px;
-      height: 100vh; 
+      height: 70vh; 
+      width:90%;
+     
      
   }
   .form2 .titlemic{
@@ -2062,9 +2076,10 @@ background-clip: text;
   
      
   
-  .repondscreen{
+  div.repondscreen{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+   
    }
   li.submenu{
   margin-right: 5px;
