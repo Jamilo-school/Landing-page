@@ -1849,11 +1849,6 @@ background-clip: text;
    
 
   }
-  .form2{
-   
-    top: 20px;
-    height: 70vh; 
-    width:90%;
   
   .marquee{
     display: grid;
@@ -2027,7 +2022,6 @@ background-clip: text;
    
    
   }
-  
   .subsection.on{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -2036,9 +2030,10 @@ background-clip: text;
   }
   .form2{
    
-    top: 20px;
-    height: 70vh; 
-    width:90%;
+      top: 20px;
+      height: 70vh; 
+      width:90%;
+}
 }
 
 @media (max-width: 480px) {
