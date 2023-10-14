@@ -355,7 +355,7 @@ background-clip: text;
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background-image: url(./img/Background.png);
+  background-image: url(./img/1.png);
 
 }
 
@@ -1521,7 +1521,7 @@ width: 30%;
   width: 45px;
   height: 45px;
   border-radius: 50% 50% 50% 0%;
-  background-color:  #0b3054; #0b3054;
+  background-color:  #0b3054;
   display: inline-block;
   margin-left: -25px;
   z-index: 5;
