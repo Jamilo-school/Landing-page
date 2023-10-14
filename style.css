@@ -344,7 +344,6 @@ background-clip: text;
   left: 500px;
 }
 
-
 .form-one{
   top: 23px;
   width: 100%;
@@ -355,7 +354,7 @@ background-clip: text;
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background-image: url(./img/1.png);
+  background-image: url(./img/Background.png);
 
 }
 
