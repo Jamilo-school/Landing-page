@@ -760,19 +760,12 @@ background-clip: text;
   position: absolute;
   top: 10px;
   right: 15px;
-  font-size: 45px;
+  font-size: 1px;
   cursor: pointer;
 
   
 }
-.close2 {
-  position: absolute;
-  top: 0px;
-  right: 15px;
-  font-size: 45px;
-  cursor: pointer
-  
-}
+
 
 /* Styling for the popup */
 .section.one {
@@ -1356,9 +1349,8 @@ width: 30%;
   align-items: flex-start;
   justify-content: space-between;
   border-radius: 0.5rem;
-  background: #606c88;
-  background: -webkit-linear-gradient(to right, #1ad5e3, #606c88);
-  background: linear-gradient(to right top, #10c8c8, #030a1c);
+  background-image: url(./img/Background.png);
+
   padding: 1rem;
   color: rgb(107, 114, 128);
   box-shadow: 0px 87px 78px -39px rgba(0,0,0,0.4);
@@ -1392,8 +1384,7 @@ width: 30%;
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 600;
-  color: rgb(255, 255, 255);
-  font-family: monospace;
+  color: rgb(105, 110, 109);
 }
 
 .desc {
@@ -1401,7 +1392,8 @@ width: 30%;
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 400;
-  color: rgb(202, 200, 200);
+  color: rgb(20, 18, 18);
+  font-size: 25px;
 }
 
 .actions,.gridplay {
@@ -1426,18 +1418,18 @@ width: 30%;
 }
 
 .download {
-  background-color:#153586;
+  background-color:#0b0b0b;
   font-weight: 600;
  
 }
 
 .download:hover {
-  background-color: rgb(209, 146, 10);
+  background-color: #a80909;
   color: #ffff;
 }
 
 .notnow {
-  background-color: #06a9b1;
+  background-color:#0b0b0b;
   font-weight: 500;
 }
 
@@ -2040,7 +2032,7 @@ background-clip: text;
   }
   
   .form2{
-   
+    margin-top: -300px;
       top: 20px;
       height: 70vh; 
       width:90%;
