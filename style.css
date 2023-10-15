@@ -5,7 +5,38 @@
   padding: 0;
   box-sizing: border-box;
 }
+h1{
+  font-size: 2rem;
+  text-align: center;
+  background-color: #060b3b;
+  color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+margin-bottom: 2px;
+  width: 100%;
+}
+/* Html count down  o top of the page starts */
 
+
+#timer {
+  display: flex;
+  background-color:#060b3b;
+  color: #fff;
+  border-radius: 20px;
+ font-weight: bold;
+  justify-content: center;
+  width: auto;
+  font-size: 60rem;
+ 
+}
+
+#timer div {
+  margin: 2px;
+  font-size: 2rem;
+  font-size: "poppins";
+  
+}
+/* Html count down  o top of the page ends */
 
 body,
 input,
@@ -1833,6 +1864,12 @@ background-clip: text;
    
 
   }
+  #timer div {
+    font-size: 1rem;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    max-width: 70%;
+}
   
   .marquee{
     display: grid;
@@ -2006,6 +2043,7 @@ background-clip: text;
    
    
   }
+  
   .subsection.on{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -2029,6 +2067,27 @@ background-clip: text;
     
     
   }
+  h1{
+    font-size: 2rem;
+    text-align: center;
+    background-color: #060b3b;
+    color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+ margin-bottom: 2px;
+    width: 100%;
+  }
+  .countdown {
+    margin: 50px;
+}
+
+#timer div {
+    font-size: 1rem;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    max-width: 70%;
+}
+
   .cardstaff {
     max-width: 300px;
   }

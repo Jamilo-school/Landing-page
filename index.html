@@ -76,8 +76,21 @@
       <img src="img/shape.png" class="square" alt="./1.DESIGNS/Grade 7/" target="_blank" />
       <div class="form-one">
         <div class="contact-info">
-          <input type="submit" value="" class="btn"  id="top"/>
-          <input type="submit" value="" class="btn"  id="top2"/>
+         
+          <!-- Html count down  o top of the page starts -->
+          <div><h1>Countdown to knec SBA  Upload 💫</h1> </div>
+          <div id="timer">
+            <div id="days">00</div>
+            <div id="days-label">Days:</div>
+            <div id="hours">00</div>
+            <div id="hours-label">hrs:</div>
+            <div id="minutes">00</div>
+            <div id="minutes-label">Min:</div>
+            <div id="seconds">00</div>
+            <div id="seconds-label">Sec</div>
+        </div>
+        <br>
+          <!-- Html count down  o top of the page ends-->
           <h3 class="title"> 
             <b style=" background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);
            -webkit-background-clip: text;
@@ -2554,6 +2567,35 @@ background-clip: text;
     // Start the sequence by displaying the first notification after an interval
     setTimeout(displayNotification, 202000); // Initial delay before displaying the first notification
     
+
+    // Function to update the countdown
+function updateCountdown() {
+    const targetDate = new Date("2023-10-26");
+    const currentDate = new Date();
+    const timeDifference = targetDate - currentDate;
+
+    const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+    document.getElementById("days").textContent = formatTime(days);
+    document.getElementById("hours").textContent = formatTime(hours);
+    document.getElementById("minutes").textContent = formatTime(minutes);
+    document.getElementById("seconds").textContent = formatTime(seconds);
+}
+
+// Function to format time (e.g., add leading zeros)
+function formatTime(time) {
+    return time < 10 ? `0${time}` : time;
+}
+
+// Initial update
+updateCountdown();
+
+// Update the countdown every second
+setInterval(updateCountdown, 1000);
+
       
     
     
