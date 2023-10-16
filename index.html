@@ -92,6 +92,71 @@
         <br>
           <!-- Html count down  o top of the page ends-->
 
+          <!-- ///////////////////PROGRESS BAR STARTS////////////////////////// -->
+          <style>
+            body {
+        
+                text-align: center;
+               
+            }
+    
+            .progress-container {
+                width: 80%;
+                margin: 0px auto;
+            }
+    
+            .progress-bar {
+                background-color:  #060b3b;
+                height: 30px;
+                border-radius: 20px;
+                position: relative;
+            }
+    
+            .progress-fill {
+                height: 100%;
+                border-radius: 20px;
+                width: 0;
+                background-color: #ff2c14;
+                transition: width 0.3s ease;
+            }
+    
+            .progress-label {
+                margin-top: 10px;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <div class="progress-label" id="progress-label">0%</div>
+            <div>School Based Assessments uploads progress</div>
+            <hr>
+            <hr>
+            <hr>
+        </div>
+        <script>
+            // Set the total number of items and the completed items
+            const totalItems = 22;
+            const completedItems = 2;
+    
+            // Calculate the percentage
+            const percentage = (completedItems / totalItems) * 100;
+    
+            // Update the progress bar and label
+            const progressFill = document.getElementById('progress-fill');
+            const progressLabel = document.getElementById('progress-label');
+    
+            progressFill.style.width = percentage + '%';
+            progressLabel.innerText = percentage.toFixed(2) +  '%';
+        </script>
+
+          <!-- ///////////////////PROGRESS BAR ENDS////////////////////////// -->
+
+
+
 
           <h3 class="title"> 
             <b style=" background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);
