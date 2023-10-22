@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phone Number Verification</title>
+    <style>
+        /* Styling for the form */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1;
+        }
+
+        .modal-content {
+            background-color: #fff;
+            width: 50%;
+            max-width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Phone Number Verification</h2>
+        <form id="verificationForm">
+            <label for="phoneNumber">Enter your Phone Number:</label>
+            <input type="text" id="phoneNumber" placeholder="e.g., +1234567890" required>
+            <button type="button" id="sendVerification">Send Verification Code</button>
+
+            <div id="verificationCodeSection" style="display: none;">
+                <label for="verificationCode">Verification Code:</label>
+                <input type="text" id="verificationCode">
+                <button type="button" id="checkVerification">Check Verification Code</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Modal for displaying the verification code -->
+    <div class="modal" id="verificationModal">
+        <div class="modal-content">
+            <h3>Verification Code</h3>
+            <p id="verificationCodeDisplay"></p>
+            <button id="closeModal">Close</button>
+        </div>
+    </div>
+
+    <!-- Modal for displaying the error message -->
+    <div class="modal" id="errorModal">
+        <div class="modal-content">
+            <h3>Verification Failed</h3>
+            <p id="errorMessage"></p>
+            <button id="closeErrorModal">Close</button>
+        </div>
+    </div>
+
+    <script>
+        // Rest of the JavaScript code remains the same
+    
+        // Simulated SMS sending function (replace with your actual SMS service)
+        function sendSMS(phoneNumber, verificationCode) {
+            // Display the verification code in the custom modal
+            const verificationCodeDisplay = document.getElementById('verificationCodeDisplay');
+            verificationCodeDisplay.textContent = `Your verification code is ${verificationCode}`;
+            const modal = document.getElementById('verificationModal');
+            modal.style.display = 'block';
+        }
+
+        // Generate a random verification code
+        function generateRandomCode() {
+            return Math.floor(1000 + Math.random() * 9000); // Generates a 4-digit code
+        }
+
+        const sendVerificationButton = document.getElementById('sendVerification');
+        const closeModalButton = document.getElementById('closeModal');
+        const verificationCodeSection = document.getElementById('verificationCodeSection');
+        const closeErrorModalButton = document.getElementById('closeErrorModal');
+
+        sendVerificationButton.addEventListener('click', () => {
+            const phoneNumberInput = document.getElementById('phoneNumber');
+            const phoneNumber = phoneNumberInput.value;
+
+            if (phoneNumber) {
+                const verificationCode = generateRandomCode();
+                sendSMS(phoneNumber, verificationCode);
+                verificationCodeSection.style.display = 'block';
+            } else {
+                alert('Please enter a valid phone number.');
+            }
+        });
+
+        closeModalButton.addEventListener('click', () => {
+            const modal = document.getElementById('verificationModal');
+            modal.style.display = 'none';
+        });
+
+        // Display the error modal for incorrect verification
+        const checkVerificationButton = document.getElementById('checkVerification');
+        checkVerificationButton.addEventListener('click', () => {
+            const enteredCode = document.getElementById('verificationCode').value;
+            const expectedCode = checkVerificationButton.dataset.expectedCode;
+
+            if (enteredCode === expectedCode) {
+                alert('Verification successful!');
+            } else {
+                const errorMessage = document.getElementById('errorMessage');
+                errorMessage.textContent = 'Incorrect verification code. Please try again.';
+                const errorModal = document.getElementById('errorModal');
+                errorModal.style.display = 'block';
+            }
+        });
+
+        closeErrorModalButton.addEventListener('click', () => {
+            const errorModal = document.getElementById('errorModal');
+            errorModal.style.display = 'none';
+        });
+    </script>
+    
+</body>
+</html>
