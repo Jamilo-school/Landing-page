@@ -5,18 +5,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-
-h1{
-  
-  
-    background-image: url('./img/pic4.jpg'); /* Replace 'path/to/your-image.jpg' with the actual path to your image */
-    background-size: cover; /* Adjust the sizing as needed */
-    color: #fff; /* Text color on top of the background */
-    text-align: center; /* Center the text horizontally */
-    padding: 20px; /* Add padding for spacing around the text */
-
+span{
+  color: red;
 }
+
+
 /* Html count down  o top of the page starts */
 
 
@@ -2072,12 +2065,19 @@ background-clip: text;
   h1{
     font-size: 2rem;
     text-align: center;
-    background-color: #060b3b;
-    color: #fff;
+    background-color: #0c145b;
     padding: 30px;
     border-radius: 20px;
  margin-bottom: 2px;
     width: 100%;
+  
+      background-image: url('./img/pic5.webp'); /* Replace 'path/to/your-image.jpg' with the actual path to your image */
+      background-size: cover; /* Adjust the sizing as needed */
+      color: #bbbbc6; /* Text color on top of the background */
+      text-align: center; /* Center the text horizontally */
+      padding: 20px; /* Add padding for spacing around the text */
+  
+  
   }
   .countdown {
     margin: 50px;
