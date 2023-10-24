@@ -15,7 +15,7 @@ span{
 
 #timer {
   display: flex;
-  background-color:#060b3b;
+  background-image: url('./img/pic5.webp'); /* Replace 'path/to/your-image.jpg' with the actual path to your image */
   color: #fff;
   border-radius: 20px;
  font-weight: bold;
