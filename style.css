@@ -50,6 +50,22 @@ main{
   width: 15%;
 
 }
+h1{
+  font-size: 2rem;
+  text-align: center;
+  padding: 30px;
+  border-radius: 20px;
+margin-bottom: 2px;
+  width: 100%;
+  
+    background-image: url('./img/pic5.webp'); /* Replace 'path/to/your-image.jpg' with the actual path to your image */
+    background-size: cover; /* Adjust the sizing as needed */
+    color: #bbbbc6; /* Text color on top of the background */
+    text-align: center; /* Center the text horizontally */
+    padding: 20px; /* Add padding for spacing around the text */
+
+
+}
 
 .navbar{
   display: flex;
