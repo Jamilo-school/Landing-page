@@ -5,9 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-span{
-  color: red;
-}
+
 
 
 /* Html count down  o top of the page starts */
@@ -152,6 +150,7 @@ p#nav.text:hover{
   border-style: dashed;
   border: none;
 }
+
 
 
 .showSignUp.btn:hover{
