@@ -261,11 +261,11 @@ background-clip: text;
 }
 
   #mrks{
-  border: solid #fafafa;
-  background-color:transparent;
+  border:4px solid #fafafa;
+  background-color:transpare;
   color: red;
   padding:8px;
-  border-radius: 15px;
+  border-radius: 5px;
   font-size: 12px;
 }
 
@@ -1219,10 +1219,17 @@ width: 30%;
   top: 10px;
  
 }
+.pdf{
+  display: block;
+  position: relative;
+  margin-top: 40px;
+  height: 100vh;
+
+}
 
 .ld-ripple div {
   position: absolute;
-  border: 4px solid #e0dbdb;
+  border: 4px solid #0e186d;
   opacity: 1;
   border-radius: 50%;
   animation: ld-ripple 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
