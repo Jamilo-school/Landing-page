@@ -88,7 +88,7 @@ margin-bottom: 2px;
   margin-left: 100px;
   align-items: center;
   position: fixed;
-
+overflow: auto;
   z-index: 1000;
   border-radius: 10px;
   
@@ -101,6 +101,7 @@ margin-bottom: 2px;
   position: absolute; /* Position it wherever you want */
   animation: marquee 3s linear; /* Adjust the duration (5s in this example) */
   z-index: 1000px;
+  overflow: auto;
 
 }
 /* WebKit-based browsers */
@@ -1453,9 +1454,7 @@ width: 30%;
   grid-gap: 0.5rem;
   gap: 0.5rem;
 }
-.popup-container{
-  border: 3px solid red;
-}
+
 
 .download, .notnow,#notnow {
   width: 100%;
