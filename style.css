@@ -76,6 +76,11 @@ margin-bottom: 2px;
 
 
 }
+.schoollogo{
+  height: 90px;
+  position: relative;
+  display: none;
+}
 
 .navbar{
   display: flex;
