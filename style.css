@@ -77,8 +77,9 @@ margin-bottom: 2px;
 
 }
 .schoollogo{
-  display: none;
+height: 20px;
 }
+
 
 .navbar{
   display: flex;
@@ -100,9 +101,12 @@ overflow: auto;
 .marquee {
   white-space: nowrap; /* Prevent text from wrapping */
   position: absolute; /* Position it wherever you want */
-  animation: marquee 1s linear; /* Adjust the duration (5s in this example) */
+  animation: marquee 2s linear; /* Adjust the duration (5s in this example) */
   z-index: 1000px;
   overflow: auto;
+  
+
+  
 
 
 
@@ -128,13 +132,14 @@ overflow: auto;
 
 .nav-menu{
   display: flex;
-  width: 93.5%;
+  width: 90%;
   top: -19px;
   height: 20vh;
   margin: auto;
   align-items: center;
   border-radius: 10px;
-  gap: 1px;
+  gap: 190px;
+
  
 }
 .nav-menu{
@@ -150,7 +155,7 @@ overflow: auto;
 
 .submenu{
   display: inline-block;
-  margin-left: 25px;
+  margin-left: 18px;
   list-style: none;
   font-weight: bold;
   margin-top: -20px;
@@ -168,6 +173,9 @@ p#nav.text:hover{
   border-style: dashed;
   border: none;
 }
+p#nav.text:active{
+  animation: sunshines 2s linear;
+}
 
 
 
@@ -178,7 +186,12 @@ p#nav.text:hover{
   transition: 0.7s ease;
   border-style: dashed;
   border: none;
-  transform: scale(1.05);
+  transform: scale(0.93);
+
+}
+.showSignUp.btn:active{
+
+  transform: scale(1.93);
 
 }
 
@@ -307,10 +320,6 @@ background-clip: text;
 .subsection.one{
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  animation: ld-ripple 2s cubic-bezier(0, 0.2, 0.8, 1) ;
-  
- 
- 
   
 }
 #footer{
@@ -424,21 +433,20 @@ background-clip: text;
   border-radius: 50%;
   background: linear-gradient(135deg, transparent 20%, #d7d2d2);
   position: absolute;
-  animation: marquee 20s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
 
 .circle.one {
   width: 130px;
   height: 130px;
-  top: 210px;
-  right: 40px;
+  top: 310px;
+  right: 540px;
 }
 
 .circle.two {
   width: 80px;
   height: 80px;
-  top: 10px;
-  right: 30px;
+  top: 90px;
+  right: 930px;
 }
 
 .contact-form:before {
@@ -450,13 +458,12 @@ background-clip: text;
   transform: rotate(45deg);
   top: 70px;
   left: -13px;
-  animation: ld-ripple 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
   
 }
 
 form {
   padding: 2.3rem  2.2rem 0rem;
-  z-index: 10;
+
   overflow: hidden;
   position: relative;
 }
@@ -613,6 +620,7 @@ textarea.input {
   padding: 2.3rem 2.2rem;
   position: relative;
   top: -25px;
+  z-index: 1;
 
  
 }
@@ -648,7 +656,7 @@ background-clip: text;
 
     -webkit-text-fill-color: transparent;
     text-align: center;
-    animation: ld-ripple 2s cubic-bezier(0, 0.2, 0.8, 1);
+   
 
   
     
@@ -677,6 +685,9 @@ background-clip: text;
 .social-media p {
   color: #333;
  
+}
+details{
+  cursor: pointer;
 }
 
 
@@ -787,7 +798,7 @@ background-clip: text;
   color: #fafafa;
   border-radius: 20px;
   width: 40%;
-  z-index: 10000;
+  z-index: 1000;
   transition: 0.7s ease;
 
 
@@ -925,10 +936,25 @@ background-clip: text;
   width: 100%;
  
 }
+p.success-prompt-heading {
+  color: rgb(126, 9, 97);
+}
+b.success-prompt-heading {
+  color: rgb(126, 9, 97);
+ 
+}
+.succes a {
+  color:rgb(10, 9, 2);
+
+ 
+}
 
 .success-prompt-heading {
   font-weight: bold;
-  color: rgb(22 101 52);
+ backdrop-filter: blur(10px);
+width: 90%;
+padding-left: 5px;
+border-radius: 5px;
 }
 .btn{
   background: linear-gradient(45deg,#8c9393,#3d098d,#d11d56,#181ecd);
@@ -1194,6 +1220,7 @@ width: 30%;
 }
 #mintitles{
   font-size: 25px;
+
 }
 
 .loader {
@@ -1392,6 +1419,7 @@ width: 30%;
   gap: 1rem;
   margin-right: 10px;
   margin-left: 10px;
+
  
 }
 #PTAinfo{
@@ -1399,19 +1427,21 @@ width: 30%;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
  
 }
+
 button#PTAinfo.showSignUp.btn{
   border: 1px solid #fff;
   margin: 4px;
   backdrop-filter: blur(10px);
+  
 }
 button#PTAinfo.showSignUp.btn:active{
  transform: scale(0.93);
 }
 .subjectspecialisation{
-  color: lavender;
-  backdrop-filter: blur(5px);
+  color: rgb(126, 9, 97);
+  backdrop-filter: blur(10px);
   font-family: georgia;
-  border-radius: 20px;
+  border-radius: 5px;
   padding: 10px;
 }
 .numbering{
@@ -1491,7 +1521,7 @@ height: 40px;
 }
 
 
-.download, .notnow,#notnow {
+.download,.notnow,#notnow {
   width: 100%;
   display: inline-flex;
   justify-content: center;
@@ -1500,13 +1530,14 @@ height: 40px;
   text-align: center;
   font-size: 0.75rem;
   line-height: 1rem;
-  color: rgb(255, 255, 255);
   outline: 2px solid transparent;
   border: 1px solid rgba(253, 253, 253, 0.363);
+  background-color:#7c7777;
 }
 
-.download {
+a.download {
   background-color:#0b0b0b;
+  color: lavender;
   font-weight: 600;
  
 }
@@ -1516,13 +1547,14 @@ height: 40px;
   color: #ffff;
 }
 
-.notnow {
+a.notnow {
   background-color:#0b0b0b;
   font-weight: 500;
+  color: lavender;
 }
 
 .notnow:hover {
-  background-color: #3f4c6b;
+  background-color: #810b77;
 }
 
 .close {
@@ -1626,6 +1658,7 @@ height: 40px;
 .staffpic:hover {
   transform: scale(1.05); 
   transition: 0.2s ease;
+  animation: sunshines 1s infinite;
 }
 
 .right-back {
@@ -1742,8 +1775,10 @@ height: 40px;
 
 .section3{
 border-radius: 20px;
-margin: -22px 20px 0px 20pX;
+margin: 2px 20px 20px 20pX;
+box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
 background-size: cover;
+
 }
 
 #more{
@@ -1813,7 +1848,7 @@ color: #45e6ef;
 
 .section2{
   margin-top: 10px;
-  background-color: #fff;
+  background-color: lavender;
   padding: 10px;
   margin-left: 30px;
   margin-right: 3dvh;
@@ -1977,7 +2012,7 @@ background-clip: text;
     grid-template-columns: repeat(2,1fr);
     margin-left: 6px;
     width: auto;
-    margin-left: 40%;
+    margin-left: 50px;
     z-index: 1000;
 
 
@@ -2255,18 +2290,17 @@ div.repondscreen{
   grid-template-columns: repeat(2,1fr);
  
  }
-li.submenu{
-margin-right: 5px;
-margin-left: 5px;
-}
+
 div.repondscreen{
   display: grid;
   grid-template-columns: repeat(2,1fr);
  
  }
 li.submenu{
-margin-right: 5px;
+margin-right: 15px;
 margin-left: 5px;
+margin-top: 5px;
+
 }
 .QRCODE{
   width: 30%;
@@ -2410,7 +2444,6 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
-background-color: white;
 padding: 20px;
 border-radius: 5px;
 width: 90%;
@@ -2502,6 +2535,11 @@ form,
   #more{
 margin-top: 60px;
     right: 30px;
+  }
+  ul.nav-menu{
+    width: 100%;
+    margin-right: -70px;
+    width: 95%;
   }
   
 }
