@@ -13,6 +13,10 @@ video{
   top:40px;
   z-index: 100;
 }
+#left-formOneEndbtns{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
 
 
 
@@ -78,6 +82,7 @@ margin-bottom: 2px;
 }
 .schoollogo{
 height: 20px;
+
 }
 
 
@@ -104,13 +109,11 @@ overflow: auto;
   animation: marquee 2s linear; /* Adjust the duration (5s in this example) */
   z-index: 1000px;
   overflow: auto;
-  
-
-  
-
-
+ 
 
 }
+
+
 /* WebKit-based browsers */
 ::-webkit-scrollbar {
   width: 8px; /* You can adjust the width as needed */
@@ -198,7 +201,12 @@ p#nav.text:active{
 
 
 #expandcomputations{
-  width: 180%;
+  width: 170%;
+
+}
+p.total{
+  animation: sunshines 2s infinite;
+  margin-left: 35px;
 }
 .hamburger{
   background-image: url(./img/humberger.png);
@@ -1792,6 +1800,7 @@ background: linear-gradient(45deg,#1de7e7,#3d098d,#d11d56,#181ecd);
 background-clip: text;
   -webkit-text-fill-color: transparent;
 font-weight: bolder;
+animation: sunshines 2s linear
 }
 
 #more:hover{
@@ -1971,6 +1980,7 @@ background-clip: text;
     width: 90%;
     height: 45%;
   }
+  
   }
 
     @media (max-width: 615px){
@@ -2316,7 +2326,7 @@ margin-top: 5px;
   position: fixed;
   height: 40px;
   top: 1px;
-  z-index: 10000;
+  z-index: 1000000;
   transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
 
 }
@@ -2542,6 +2552,11 @@ margin-top: 60px;
     width: 95%;
   }
   
+}
+@media (max-width: 461px){
+  #left-formOneEndbtns{
+    grid-template-columns: repeat(2,1fr);
+  }
 }
 
 

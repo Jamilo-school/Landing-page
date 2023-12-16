@@ -1,6 +1,22 @@
 *{
   padding: 0;
 }
+
+
+
+/* Initially hide all list items */
+#list li {
+  display: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Show list items with smooth transition */
+#list li.show {
+  display: block;
+  opacity: 1;
+  padding: 10px;
+}
+
 .formsectionA{
   position: absolute;
   top: 1px;

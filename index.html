@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jamilo school</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="LandingPage.css" />
     <link rel="shortcut icon" href="./img/schoologo.png" type="image/x-icon">
     <script
       src="https://kit.fontawesome.com/74d58efce2.js"
@@ -72,43 +72,8 @@
         <br>
           <!-- Html count down  o top of the page ends-->
 
-          <!-- ///////////////////PROGRESS BAR STARTS////////////////////////// -->
-          <style>
-            #progress-label, #school{
-        
-                text-align: center;
-               
-            }
-    
-            .progress-container {
-                width: 80%;
-                margin: 0px auto;
-            }
-    
-            .progress-bar {
-              background-image: url('./img/pic\ 10.webp'); /* Replace 'path/to/your-image.jpg' with the actual path to your image */
-                height: 30px;
-                border-radius: 20px;
-                position: relative;
-               
-            }
-    
-            .progress-fill {
-                height: 100%;
-                border-radius: 20px;
-                width: 0;
-
-                background-image: url('./img/pic5.webp'); /* Replace 'path/to/your-image.jpg' with the actual path to your image */
-                transition: width 0.3s ease;
-                
-            }
-    
-            .progress-label {
-                margin-top: 10px;
-                font-size: 18px;
-            }
-           
-        </style>
+         
+         
     </head>
     <body>
         <!-- <div class="progress-container">
@@ -121,23 +86,7 @@
             <hr>
             <hr>
         </div> -->
-        <script>
-            // Set the total number of items and the completed items
-            const totalItems = 22;
-            const completedItems = 22;
-    
-            // Calculate the percentage
-            const percentage = (completedItems / totalItems) * 100;
-    
-            // Update the progress bar and label
-            const progressFill = document.getElementById('progress-fill');
-            const progressLabel = document.getElementById('progress-label');
-    
-            progressFill.style.width = percentage + '%';
-            progressLabel.innerText = percentage.toFixed(2) +  '%';
-        </script>
-
-          <!-- ///////////////////PROGRESS BAR ENDS////////////////////////// -->
+     
 
           <h3 class="title"> 
             <b style="   background: linear-gradient(45deg,#8c9393,#3d098d,#d11d56,#181ecd);
@@ -146,16 +95,17 @@
        
             -webkit-text-fill-color: transparent;">Jamilo school</b></h3>
             
-        <p class="text1"><b>
+        <p class="text1"><b id="logoin">
           <img src="./img/schoologo.jpg" alt="" class="schoollogo" id="logoin">
           Embracing Technology Evolution in Education  </b>
           </p>
-          
+      
+     
           <h2 style="   background: linear-gradient(45deg,#8c9393,#3d098d,#d11d56,#181ecd);
          -webkit-background-clip: text;
 background-clip: text;
        
-          -webkit-text-fill-color: transparent;" id="noma"> Nominal Rolls 2023 </h2>
+          -webkit-text-fill-color: transparent;" id="noma"> Nominal Rolls 2024 </h2>
           
           <div class="sections">
             <div class="section one">
@@ -170,7 +120,7 @@ background-clip: text;
                 <a href="javascript:void(0);" onclick="showPopup('Level: Daycare', 'Male: 16', 'Female: 14','Total: 30', 'Class Teacher: Md Caren Atieno ','The Year: 2023','Last Updated On: Monday Sept 4th, 2023')"><b>Daycare</b></a>
                 <a href="javascript:void(0);" onclick="showPopup('Level: Pre - Primary Two', 'Male: 22', 'Female: 12','Total: 34', 'Class Teacher: Md Evelyne Akoth ','The Year: 2023','Last Updated On: Monday Sept 4th, 2023')"id="min2"><b>Pre - PrimaryTwo</b></a>
                 <a href="javascript:void(0);" onclick="showPopup('Level: Pre - Primary One', 'Male: 11', 'Female: 16','Total: 27', 'Class Teacher: Md Linet Radido ','The Year: 2023','Last Updated On: Monday Sept 4th, 2023')"id="min2"><b>Pre - Primary one</b></a>
-                <a href="javascript:void(0);" id="expandcomputations"><b>Total Computation = 262 </b></a>
+                <a href="javascript:void(0);" id="expandcomputations"><b>Total Computation = <p class="total">262</b> </b></a>
               </div>
           
             
@@ -202,7 +152,7 @@ background-clip: text;
 background-clip: text;
        
             -webkit-text-fill-color: transparent;" id="mintitles">Curriculum designs</b></h3>
- <div class="right section">
+ <div class="right section" id="left-formOneEndbtns">
 <div class="one">
   <h4 class="showSignUp btn" id="levels" >> Grade 7</h4></a>
   <div class="microsofthide" id="cls7">
@@ -698,7 +648,9 @@ background-clip: text;
             <div class="right section">
               <div class="one">
                 <img src="./img/Thumbnail2.png" alt="./CurriculumDesigns/Grade 7/" target="_blank" class="profile"><br><h4 class="nametags" id="class">Grade 6</h4><br>
+                <marquee behavior="" direction="right">
                 <h4 class="nametags"><a href="./pdfs/Serial No 001.pdf"  class="download-link" data-filename="Grade 6 science and Technology Smart kid" target="_blank" id="mrks">🩺Science🩺</a></h4><br>
+              </marquee>
                 <h4 class="nametags"><a href="#" onclick="alert('Kindly prepair your copy')" target="_blank" id="mrks"> 
                   <di class="svg">
                   <svg height="27" width="16" viewBox="3 0 9 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M1 14.5a6.496 6.496 0 0 1 3.064-5.519 8.001 8.001 0 0 1 15.872 0 6.5 6.5 0 0 1-2.936 12L7 21c-3.356-.274-6-3.078-6-6.5zm15.848 4.487a4.5 4.5 0 0 0 2.03-8.309l-.807-.503-.12-.942a6.001 6.001 0 0 0-11.903 0l-.12.942-.805.503a4.5 4.5 0 0 0 2.029 8.309l.173.013h9.35l.173-.013zM13 12h3l-4 5-4-5h3V8h2v4z" fill="currentColor"></path></svg>
@@ -708,11 +660,13 @@ background-clip: text;
                 <div class="one">
                  <img src="./img/planIII.png" alt="" target="_blank" class="profile"><br><h4 class="nametags" id="class">Term III  </h4><br>
                   <h4 class="nametags"><a href="./pdfs/Term III school plan Origin.pdf" target="_blank" id="mrks">🩺School Plan🩺</a></h4><br>
+                  <marquee behavior="" direction="" class=".marque">
                   <h4 class="nametags"><a href="./pdfs/Term III school plan Origin.pdf" download id="mrks">
                     <di class="svg">
                     <svg height="27" width="16" viewBox="3 0 9 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M1 14.5a6.496 6.496 0 0 1 3.064-5.519 8.001 8.001 0 0 1 15.872 0 6.5 6.5 0 0 1-2.936 12L7 21c-3.356-.274-6-3.078-6-6.5zm15.848 4.487a4.5 4.5 0 0 0 2.03-8.309l-.807-.503-.12-.942a6.001 6.001 0 0 0-11.903 0l-.12.942-.805.503a4.5 4.5 0 0 0 2.029 8.309l.173.013h9.35l.173-.013zM13 12h3l-4 5-4-5h3V8h2v4z" fill="currentColor"></path></svg>
                     
                     Download</a><br></h4>
+                  </marquee>
                   </div>
                   <div class="one">
                    <img src="./img/smart Kid.png" alt="./CurriculumDesigns/Grade 7/" target="_blank" class="profile"><br><h4 class="nametags" id="class">Grade 5</h4><br>
@@ -724,7 +678,9 @@ background-clip: text;
                   </div>
                 <div class="one">
                  <img src="./img/planIII.png" alt="" target="_blank" class="profile"><br><h4 class="nametags" id="class">Term III  </h4><br>
+                 <marquee behavior="" direction="right">
                   <h4 class="nametags"><a href="./pdfs/Term III school plan Origin.pdf" target="_blank" id="mrks">🩺School Plan🩺</a></h4><br>
+                </marquee>
                   <h4 class="nametags"><a href="./pdfs/Term III school plan Origin.pdf" download id="mrks">
                     <di class="svg">
                     <svg height="27" width="16" viewBox="3 0 9 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M1 14.5a6.496 6.496 0 0 1 3.064-5.519 8.001 8.001 0 0 1 15.872 0 6.5 6.5 0 0 1-2.936 12L7 21c-3.356-.274-6-3.078-6-6.5zm15.848 4.487a4.5 4.5 0 0 0 2.03-8.309l-.807-.503-.12-.942a6.001 6.001 0 0 0-11.903 0l-.12.942-.805.503a4.5 4.5 0 0 0 2.029 8.309l.173.013h9.35l.173-.013zM13 12h3l-4 5-4-5h3V8h2v4z" fill="currentColor"></path></svg>
@@ -2515,105 +2471,20 @@ id="mintitles">Latest Internal Results 2023</b></h3>
     </div>
   </div>
   
-  <br><br><br><br><br><br>
+
 
   
   
 </form>
             
-                
-           
-
-           
-           
-         
-     
     
 
-  
-    
-
-<!-- ///////////////////////////////////// -->
+<!-- ///////////////////////////////////// --> 
     </div>
   </div>
-  
-   <!-- <script>
 
-    var notifications = [
-    '🧑‍⚕️ ',
-     
-    
-     
-    ];
-    
-    var notificationIndex = 0;
-    
-    function displayNotification() {
-      if (notificationIndex < notifications.length) {
-        var notification = notifications[notificationIndex];
-    
-        var notificationElement = document.createElement("div");
-        notificationElement.classList.add("toast");
-        notificationElement.innerText = notification;
-        document.body.appendChild(notificationElement);
-    
-        notificationElement.classList.add("toast-enter");
-        setTimeout(function () {
-          notificationElement.classList.remove("toast-enter");
-          setTimeout(function () {
-            notificationElement.classList.add("toast-exit");
-            setTimeout(function () {
-              notificationElement.remove();
-              notificationIndex++;
-              displayNotification(); // Display the next notification after the interval
-            }, 1000); // Exit animation duration
-          }, 1000); // Entrance duration
-        },8000); //  Display animation duration
-      }
-    }
-    
-    // Start the sequence by displaying the first notification after an interval
-    setTimeout(displayNotification, 5000); // Initial delay before displaying the first notification
-    
-
-    // Function to update the countdown
-function updateCountdown() {
-    const targetDate = new Date("2023-10-26");
-    const currentDate = new Date();
-    const timeDifference = targetDate - currentDate;
-
-    const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
-
-    document.getElementById("days").textContent = formatTime(days);
-    document.getElementById("hours").textContent = formatTime(hours);
-    document.getElementById("minutes").textContent = formatTime(minutes);
-    document.getElementById("seconds").textContent = formatTime(seconds);
-}
-
-// Function to format time (e.g., add leading zeros)
-function formatTime(time) {
-    return time < 10 ? `0${time}` : time;
-}
-
-// Initial update
-updateCountdown();
-
-// Update the countdown every second
-setInterval(updateCountdown, 1000);
-
-      
-
-    
-    
-    
-    
-    </script>
-    -->
-
-    <script src="app.js"></script>
+    <script src="landingPage.js"></script>
+    <script src="TopNotification.js"></script>
    
    
   </body>
