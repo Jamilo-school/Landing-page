@@ -1,11 +1,8 @@
 
 
 var notifications = [
-'🧑‍⚕️Mery Christmas to',
-'🧑‍⚕️Sir Jumba Clarance',
-'🧑‍⚕️Mr Calvin Ochieng ',
-'🧑‍⚕️Madam Tressa apiyo',
-'🧑‍⚕️Madam Lencer Seje',
+'🧑‍⚕️Mery Christmas',
+
  
 
  
